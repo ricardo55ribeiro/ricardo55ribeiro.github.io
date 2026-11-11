@@ -40,6 +40,7 @@
       <nav class="nav" aria-label="Main navigation">
         <a class="nav-link active" href="#top" data-section="top" aria-current="page">Home</a>
         <a class="nav-link" href="#research" data-section="research">Research</a>
+        <a class="nav-link" href="#open-source" data-section="open-source">Open Source</a>
         <a class="nav-link" href="#projects" data-section="projects">Projects</a>
         <a class="nav-link" href="assets/CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
         <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch color theme" title="Switch between light and dark themes">
@@ -60,8 +61,8 @@
             <p class="quiet hero-subtitle">MSc Computer Science and Engineering · Instituto Superior Técnico</p>
           </div>
           <div class="hero-copy">
-          <p>I am a Master's student in <a href="https://tecnico.ulisboa.pt/en/education/courses/masters-programmes/computer-science-and-engineering/" target="_blank" rel="noopener noreferrer">Computer Science and Engineering at Instituto Superior Técnico</a>, focusing on artificial intelligence and distributed systems. I hold a Bachelor's degree in Engineering Physics, and my interests include machine learning and scientific computing.</p>
-          <p>Previously, I worked on physical neural networks with <strong>Noisr</strong>, inverse modelling of oxygen plasmas with <strong>ML4Plasmas</strong>, quantum simulations at <strong>GoLP</strong> and particle physics analyses through <strong>LIP</strong> in the <a href="https://cms.cern/" target="_blank" rel="noopener noreferrer">CMS Collaboration</a>.</p>
+          <p>I am a Master's student in <a href="https://tecnico.ulisboa.pt/en/education/courses/masters-programmes/computer-science-and-engineering/" target="_blank" rel="noopener noreferrer">Computer Science and Engineering at Instituto Superior Técnico</a>, specializing in Artificial Intelligence and Distributed Systems. I hold a Bachelor's degree in Engineering Physics, and my research interests include machine learning, reinforcement learning, AI agents and AI for science.</p>
+          <p>Previously, I worked on Physical Neural Networks with <strong>Noisr</strong>, inverse modelling of oxygen plasmas with the <strong>ML4Plasmas</strong> research group, quantum simulations at <strong>GoLP</strong> and particle physics analyses through <strong>LIP</strong> in the <a href="https://cms.cern/" target="_blank" rel="noopener noreferrer">CMS Collaboration</a>.</p>
           <p>I'm happy to discuss research and potential collaborations.</p>
           <div class="contact" aria-label="Contact and profile links">
             <a class="contact-link" href="mailto:ricardo.silva.ribeiro@tecnico.ulisboa.pt" title="Send an email"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 7 9-7"/></svg><span>Email</span></a>
@@ -79,11 +80,11 @@
         <h2 class="section-title" id="research-title">Research Experience</h2>
         <article class="entry">
           <div class="entry-heading"><h3>Noisr <span class="role">· Research Engineer</span></h3><span class="entry-date">2024 - 2026</span></div>
-          <p>Developed learning algorithms for electronics-based physical neural networks, contributed to optics-based approaches and prototyped analogue computing architectures. Also implemented statistical tests for physical random-number generators in C++.</p>
+          <p>Developed learning algorithms for electronics-based physical neural networks, contributed to optics-based approaches and prototyped analogue computing architectures. Also implemented statistical tests for physical random-number generators in C++. Our work received the LEFT/MEFT Student Innovation Prize at the IST-Physics Frontier Symposium.</p>
         </article>
         <article class="entry">
           <div class="entry-heading"><h3>ML4Plasmas <span class="role">· Undergraduate Research Project</span></h3><span class="entry-date">2026</span></div>
-          <p>Studied inverse estimation of oxygen-plasma reaction-rate coefficients using PyTorch neural networks, with experiments on input-species selection, model ensembles and noise robustness. Supervised by Prof. Vasco Guerra and Prof. Rodrigo Ventura.</p>
+          <p>Studied inverse estimation of oxygen-plasma reaction-rate coefficients using PyTorch neural networks, investigating input-species selection, model ensembles and noise robustness. Achieved strong predictive performance on noise-free simulation data while identifying sensitivity to noisy inputs as a key limitation. Supervised by Prof. Vasco Guerra and Prof. Rodrigo Ventura.</p>
           <p class="entry-links"><a href="https://github.com/ricardo55ribeiro/inverse-estimation-oxygen-plasmas-ML" target="_blank" rel="noopener noreferrer">Code</a> <span class="muted-separator">|</span> <a href="https://github.com/ricardo55ribeiro/inverse-estimation-oxygen-plasmas-ML/blob/main/docs/Report.pdf" target="_blank" rel="noopener noreferrer">Report</a></p>
         </article>
         <article class="entry">
@@ -92,7 +93,7 @@
         </article>
         <article class="entry">
           <div class="entry-heading"><h3>LIP / CMS Collaboration <span class="role">· Research Intern</span></h3><span class="entry-date">2025</span></div>
-          <p>Built C++/ROOT analysis tools for CMS Run 3 collision data, including likelihood fitting, efficiency corrections and BDT evaluation. Presented research findings within the CMS Collaboration.</p>
+          <p>Built C++/ROOT analysis tools for CMS Run 3 collision data, including likelihood fitting, efficiency corrections and BDT evaluation. Presented research findings within the CMS Collaboration. Additionally contributed to X(3872) studies.</p>
         </article>
       </section>
 
@@ -100,32 +101,22 @@
         <h2 class="section-title" id="open-source-title">Open-Source Contributions</h2>
         <article class="entry">
           <div class="entry-heading"><h3>Agent-Safety Evaluation: AgentDojo Weighting Analysis</h3><span class="entry-date">2026</span></div>
-          <p>Contributed a merged post-publication research extension to <em>Shortcut Sensitivity in Agent-Safety Evaluations</em>. Investigated how evaluation-unit weighting affects AgentDojo lookup metrics using grouped cross-validation, domain holdouts and bootstrap uncertainty analysis. Found that reported leave-one-domain-out F1 changed from 0.495 to 0.537 under interaction weighting, partly due to domain composition.</p>
+          <p>Contributed a merged post-publication research extension to <a href="https://arxiv.org/abs/2610.22243" target="_blank" rel="noopener noreferrer"><em>Shortcut Sensitivity in Agent-Safety Evaluations</em></a>. Investigated the effects of evaluation-unit weighting on AgentDojo lookup metrics using grouped cross-validation, domain holdouts and bootstrap uncertainty analysis. Found that changing the evaluation weighting increased the reported leave-one-domain-out F1 score from 0.495 to 0.537 without changing the underlying predictions.</p>
           <p class="entry-links"><a href="https://github.com/hasandemirkiran/shortcut-sensitivity-agent-safety-evaluations/pull/1" target="_blank" rel="noopener noreferrer">Merged PR</a> <span class="muted-separator">|</span> <a href="https://github.com/hasandemirkiran/shortcut-sensitivity-agent-safety-evaluations/tree/main/extensions/agentdojo_lookup_weighting" target="_blank" rel="noopener noreferrer">Code &amp; Results</a></p>
         </article>
       </section>
 
       <section class="content-section" id="projects" aria-labelledby="projects-title">
-        <h2 class="section-title" id="projects-title">Selected Projects</h2>
-        <article class="entry" id="plasma-project">
-          <div class="entry-heading"><h3>Inverse Estimation of Oxygen Plasma Parameters</h3><span class="entry-date">2026</span></div>
-          <p>Neural-network inference of reaction-rate coefficients from plasma simulations. Explored which observed species are most informative and how noise affects predictions.</p>
-          <p class="entry-links"><a href="https://github.com/ricardo55ribeiro/inverse-estimation-oxygen-plasmas-ML" target="_blank" rel="noopener noreferrer">Code</a> <span class="muted-separator">|</span> <a href="https://github.com/ricardo55ribeiro/inverse-estimation-oxygen-plasmas-ML/blob/main/docs/Report.pdf" target="_blank" rel="noopener noreferrer">Report</a></p>
-        </article>
+        <h2 class="section-title" id="projects-title">Projects</h2>
         <article class="entry">
           <div class="entry-heading"><h3>Traffic Lights Reinforcement Learning Agent</h3><span class="entry-date">2025</span></div>
-          <p>A tabular reinforcement-learning agent for the Traffic Lights strategy game, with opponent curricula, self-play, evaluation baselines and a playable desktop interface.</p>
-          <p class="entry-links"><a href="https://github.com/ricardo55ribeiro/TrafficLightsGame-AI" target="_blank" rel="noopener noreferrer">Code &amp; Demo</a></p>
+          <p>A tabular reinforcement learning agent for the Traffic Lights strategy game, with opponent curricula, self-play, evaluation baselines and a playable desktop interface.</p>
+          <p class="entry-links"><a href="https://github.com/ricardo55ribeiro/TrafficLightsGame-AI" target="_blank" rel="noopener noreferrer">Code</a></p>
         </article>
         <article class="entry">
           <div class="entry-heading"><h3>TrackStudy</h3><span class="entry-date">2026</span></div>
-          <p>A local-first study and research tracker built with Flutter for Windows and Android, with research journaling, weekly planning and optional synchronization.</p>
+          <p>A local-first study and research tracker built with Flutter for Windows and Android, with research journaling, weekly planning and optional cross-device synchronization.</p>
           <p class="entry-links"><a href="https://github.com/ricardo55ribeiro/TrackStudy" target="_blank" rel="noopener noreferrer">Code</a></p>
-        </article>
-        <article class="entry">
-          <div class="entry-heading"><h3>FocusGuard</h3><span class="entry-date">2026</span></div>
-          <p>A privacy-conscious Windows focus assistant using locally running language models to classify active browser and desktop activity.</p>
-          <p class="entry-links"><a href="https://github.com/ricardo55ribeiro/Focus-Guard" target="_blank" rel="noopener noreferrer">Code</a></p>
         </article>
       </section>
 
