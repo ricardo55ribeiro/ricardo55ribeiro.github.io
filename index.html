@@ -100,6 +100,16 @@
       <section class="content-section" id="open-source" aria-labelledby="open-source-title">
         <h2 class="section-title" id="open-source-title">Open-Source Contributions</h2>
         <article class="entry">
+          <div class="entry-heading">
+            <h3>PyTorch TorchRL · Bug Fix</h3>
+            <span class="entry-date">2026</span>
+          </div>
+          <p>Contributed a bug fix to PyTorch's TorchRL library, improving a planner that searches for effective actions by testing and refining candidate choices. I found that when the planner kept only one candidate, a statistical calculation produced an undefined value, which lead to invalid actions. I corrected the calculation for this case and added regression tests, while preserving the existing behavior when multiple candidates are selected.</p>
+          <p class="entry-links">
+            <a href="https://github.com/pytorch/rl/pull/4734" target="_blank" rel="noopener noreferrer">Merged PR</a>
+          </p>
+        </article>
+        <article class="entry">
           <div class="entry-heading"><h3>Agent-Safety Evaluation: AgentDojo Weighting Analysis</h3><span class="entry-date">2026</span></div>
           <p>Contributed a merged post-publication research extension to <a href="https://arxiv.org/abs/2610.22243" target="_blank" rel="noopener noreferrer"><em>Shortcut Sensitivity in Agent-Safety Evaluations</em></a>. Investigated the effects of evaluation-unit weighting on AgentDojo lookup metrics using grouped cross-validation, domain holdouts and bootstrap uncertainty analysis. Found that changing the evaluation weighting increased the reported leave-one-domain-out F1 score from 0.495 to 0.537 without changing the underlying predictions.</p>
           <p class="entry-links"><a href="https://github.com/hasandemirkiran/shortcut-sensitivity-agent-safety-evaluations/pull/1" target="_blank" rel="noopener noreferrer">Merged PR</a> <span class="muted-separator">|</span> <a href="https://github.com/hasandemirkiran/shortcut-sensitivity-agent-safety-evaluations/tree/main/extensions/agentdojo_lookup_weighting" target="_blank" rel="noopener noreferrer">Code &amp; Results</a></p>
